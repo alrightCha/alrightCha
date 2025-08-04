@@ -26,7 +26,7 @@ const SkeletonLoader = () => (
 const BlogPost = ({ post }: { post: BlogContext }) => {
 
   const openPDF = (pdfLink: string) => {
-    const fullLink = `/blog/${pdfLink}`
+    const fullLink = `/paper/${pdfLink}`
     const pdfWindow = window.open();
     if (pdfWindow) {
       pdfWindow.location.href = fullLink;
