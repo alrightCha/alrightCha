@@ -5,15 +5,13 @@ import Link from "next/link";
 import Description from "./description";
 import { cn } from "@/app/lib/utils";
 import { IoIosMail } from "react-icons/io";
-import { FaLinkedin, FaGithub, FaMapPin } from "react-icons/fa";
-import { GiChiliPepper } from "react-icons/gi";
+import { FaGithub, FaMapPin } from "react-icons/fa";
 
 type UserProfile = {
   username: string;
   description: string;
   pic?: string;
   mail?: string;
-  linkedin: string;
   github: string;
   joined?: number;
   tag?: string;
@@ -48,17 +46,6 @@ const ProfileHeader = ({ user, className }: ProfileHeaderProps) => {
               </div>
 
               <div className="flex flex-row items-center gap-4 mt-2 opacity-80 text-sm">
-                {user.linkedin && (
-                  <Link
-                    className="flex items-center gap-1 hover:underline"
-                    href={user.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLinkedin />
-                    LinkedIn
-                  </Link>
-                )}
                 {user.github && (
                   <Link
                     className="flex items-center gap-1 hover:underline"
