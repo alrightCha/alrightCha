@@ -10,7 +10,6 @@ export const neoseiki: UserProfile = {
   pic: art,
   tag: "SWE",
   github: "https://github.com/alrightCha",
-  linkedin: "https://www.linkedin.com/in/youssefchammam/",
   mail: "neoseiki@proton.me",
   location: "Berlin, DE",
   origin: "Tunisia",
