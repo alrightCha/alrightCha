@@ -6,7 +6,7 @@ import { Website } from "./components/ui/custom-list";
 export const neoseiki: UserProfile = {
   username: "i go by Neoseiki",
   description:
-    "Passionate about problem-solving & decentralization, I have developed over 20 projects in the past 3 years. Successfully finished my studies in 2024 with a perfect 1.0 in my thesis. Always looking for new challenges. Currently learning about cryptography & ZKPs.",
+    "Passionate about problem-solving & decentralization. On my way to cracking the code with my newest project where I am putting my machine to the work.",
   pic: art,
   tag: "SWE",
   github: "https://github.com/alrightCha",
@@ -27,6 +27,13 @@ export const blogs: BlogContext[] = [
 ];
 
 export const websites: Website[] = [
+  {
+    active: true, 
+    description: "Copytrade & make solana by following the biggest trenchers instead of losing all your money gambling", 
+    launchDate: "SOON...", 
+    name: "Glue", 
+    url: "https://theglue.app"
+  }
   {
     active: false,
     description: "A Youtube Thumbnail Maker combining AI & Paint-like features",
@@ -80,7 +87,7 @@ export const websites: Website[] = [
     url: "https://shipswiftly.app",
   },
   {
-    active: true,
+    active: false,
     description:
       "An AI IOS App for Mental Health Coaching providing AI CBT Therapy, Mental Health Quizzes, Mood Tracking, Journaling & More.",
     launchDate: "July 2023",
