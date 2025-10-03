@@ -33,7 +33,7 @@ export const websites: Website[] = [
     launchDate: "SOON...", 
     name: "Glue", 
     url: "https://theglue.app"
-  }
+  },
   {
     active: false,
     description: "A Youtube Thumbnail Maker combining AI & Paint-like features",
