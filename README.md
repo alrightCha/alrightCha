@@ -1,5 +1,5 @@
 <!-- Profile README for Neoseiki -->
-- 👨‍💻 Latest project: **thumbnailsuite.com**
+- 👨‍💻 Latest project: **theglue.app**
 - 🔭 Currently learning **Zero-knowledge Proofs & cryptography**
 - 📫 Reach out to: **neoseiki@proton.me**
 
