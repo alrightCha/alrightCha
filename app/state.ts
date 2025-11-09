@@ -28,9 +28,9 @@ export const blogs: BlogContext[] = [
 
 export const websites: Website[] = [
   {
-    active: true, 
+    active: false, 
     description: "Copytrade & make solana by following the biggest trenchers instead of losing all your money gambling", 
-    launchDate: "SOON...", 
+    launchDate: "REFUSED FROM APP STORE", 
     name: "Glue", 
     url: "https://theglue.app"
   },
