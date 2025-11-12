@@ -6,7 +6,7 @@ import { Website } from "./components/ui/custom-list";
 export const neoseiki: UserProfile = {
   username: "i go by Neoseiki",
   description:
-    "Passionate about problem-solving & decentralization. On my way to cracking the code with my newest project where I am putting my machine to the work.",
+    "Passionate about problem-solving & decentralization. Currently learning more on the maths behind it all.",
   pic: art,
   tag: "SWE",
   github: "https://github.com/alrightCha",
