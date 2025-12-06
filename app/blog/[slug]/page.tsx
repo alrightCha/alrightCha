@@ -33,7 +33,8 @@ export async function generateMetadata({
 
   const title = blogPost.title;
   const description = blogPost.description;
-  const url = `https://neoseiki.com/blog/${slug}`;
+  const url = `https://neoseiki.dev/blog/${slug}`;
+  const ogImageUrl = `/api/og?title=${encodeURIComponent(title)}`;
 
   return {
     title,
@@ -46,7 +47,7 @@ export async function generateMetadata({
       siteName: "Neoseiki",
       images: [
         {
-          url: "/og-image.png", // You can add a custom OG image later
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: title,
@@ -57,7 +58,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: ["/og-image.png"], // You can add a custom Twitter card image later
+      images: [ogImageUrl],
     },
   };
 }
