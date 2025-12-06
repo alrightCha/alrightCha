@@ -27,12 +27,12 @@ type ProfileHeaderProps = {
 const ProfileHeader = ({ user, className }: ProfileHeaderProps) => {
   return (
     <div className={cn("flex flex-col items-center md:items-start mt-1 w-full px-2 sm:px-0 my-2", className)}>
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-1 w-full">
+      <div className="flex flex-row items-start gap-2 md:gap-1 w-full">
         <Ascii artHolder={user.pic} />
-        <div className="flex flex-col items-center md:items-start justify-center md:justify-start gap-4 max-w-full md:max-w-[550px] w-full">
+        <div className="flex flex-col items-start justify-center md:justify-start gap-4 max-w-full md:max-w-[550px] w-full">
           <div className="flex flex-col md:gap-0 gap-2 md:flex-row p-2 md:p-0 items-start md:justify-between w-full">
             <div className="flex flex-col items-center md:items-start gap-2">
-              <div className="flex flex-col md:flex-row items-center justify-start md:gap-2 gap-1 w-full">
+              <div className="flex flex-row items-center justify-start md:gap-2 gap-1 w-full">
                 <TextScramble
                   className="font-mono uppercase text-lg sm:text-xl p-1"
                   as="span"
