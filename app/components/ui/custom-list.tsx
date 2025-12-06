@@ -3,14 +3,7 @@
 import { useState } from "react";
 import { ExternalLink, Flame } from "lucide-react";
 import { TextScramble } from "./text-scramble";
-
-export interface Website {
-  name: string;
-  url: string;
-  description: string;
-  active: boolean;
-  launchDate: string;
-}
+import { Website } from "@/app/lib/types";
 
 export const List = ({
   websites,

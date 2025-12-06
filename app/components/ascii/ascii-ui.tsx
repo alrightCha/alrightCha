@@ -44,7 +44,7 @@ const Ascii = ({
   className?: string;
 }) => {
   return (
-    <div className="overflow-x-auto overflow-y-hidden w-full">
+    <div className="overflow-x-auto overflow-y-hidden w-full md:w-1/2">
       <pre
         className={cn(
           "relative whitespace-pre inline-block",

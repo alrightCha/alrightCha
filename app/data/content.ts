@@ -1,21 +1,19 @@
-import { UserProfile } from "./components/profile/header";
-import { art } from "./components/ascii/ascii-ui";
-import { BlogContext } from "./contexts/blog-viewer";
-import { Website } from "./components/ui/custom-list";
+import { UserProfile, BlogPost, Website } from "@/app/lib/types";
+import { art } from "@/app/components/ascii/ascii-ui";
 
 export const neoseiki: UserProfile = {
-  username: "i go by Neoseiki",
+  username: "Neoseiki",
   description:
-    "Passionate about problem-solving & decentralization. Currently learning more on the maths behind it all.",
+    "Passionate about problem-solving & decentralization. <br /> Currently learning more on the maths behind it all.",
   pic: art,
   tag: "SWE",
   github: "https://github.com/alrightCha",
   mail: "neoseiki@proton.me",
-  location: "Berlin, DE",
+  location: "Düsseldorf, DE",
   origin: "Tunisia",
 };
 
-export const blogs: BlogContext[] = [
+export const blogs: BlogPost[] = [
   {
     title: "A practical Discv5 exploration",
     description:
@@ -23,16 +21,27 @@ export const blogs: BlogContext[] = [
     createdAt: "October 2024",
     topic: 0,
     content: "/thesis.pdf",
+    isBlog: false,
+  },
+  {
+    title: "Welcome to My First Blog Post",
+    description:
+      "A sample blog post demonstrating HTML content rendering with code examples and formatting",
+    createdAt: "December 2025",
+    topic: 0,
+    content: "welcome",
+    isBlog: true,
   },
 ];
 
 export const websites: Website[] = [
   {
-    active: false, 
-    description: "Copytrade & make solana by following the biggest trenchers instead of losing all your money gambling", 
-    launchDate: "REFUSED FROM APP STORE", 
-    name: "Glue", 
-    url: "https://theglue.app"
+    active: false,
+    description:
+      "Copytrade & make solana by following the biggest trenchers instead of losing all your money gambling",
+    launchDate: "REFUSED FROM APP STORE",
+    name: "Glue",
+    url: "https://theglue.app",
   },
   {
     active: false,

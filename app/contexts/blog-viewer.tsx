@@ -1,20 +1,13 @@
 "use client";
 
-import React, { createContext, useContext, useState, ReactNode } from "react";
-
-export interface BlogContext {
-  topic: number;
-  title: string;
-  content: string;
-  createdAt: string;
-  description: string; 
-}
+import { createContext, useContext, useState, ReactNode } from "react";
+import { BlogPost } from "@/app/lib/types";
 
 interface BlogViewerContextType {
   isOpen: boolean;
   blogContent: string | null;
-  blogData: BlogContext | null;
-  openBlog: (content: string, data: BlogContext) => void;
+  blogData: BlogPost | null;
+  openBlog: (content: string, data: BlogPost) => void;
   closeBlog: () => void;
 }
 
@@ -25,9 +18,9 @@ const BlogViewerContext = createContext<BlogViewerContextType | undefined>(
 export function BlogViewerProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [blogContent, setBlogContent] = useState<string | null>(null);
-  const [blogData, setBlogData] = useState<BlogContext | null>(null);
+  const [blogData, setBlogData] = useState<BlogPost | null>(null);
 
-  const openBlog = (content: string, data: BlogContext) => {
+  const openBlog = (content: string, data: BlogPost) => {
     setBlogContent(content);
     setBlogData(data);
     setIsOpen(true);
