@@ -24,12 +24,12 @@ export const blogs: BlogPost[] = [
     isBlog: false,
   },
   {
-    title: "Welcome to My First Blog Post",
+    title: "Decentralizing information",
     description:
-      "A sample blog post demonstrating HTML content rendering with code examples and formatting",
-    createdAt: "December 2025",
+      "Decentralizing money with bitcoin was only the first milestone. Decentralizing information is next. The final step being agriculture.",
+    createdAt: "7 December 2025",
     topic: 0,
-    content: "welcome",
+    content: "decentralizing-information",
     isBlog: true,
   },
 ];
