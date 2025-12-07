@@ -8,7 +8,7 @@ import ToggleButton from "./components/ui/toggle-button";
 import { blogs, websites, neoseiki } from "./data/content";
 
 export default function AccountFeatureDetail() {
-  const [activeTab, setActiveTab] = useState<"papers" | "blogs">("blogs");
+  const [activeTab, setActiveTab] = useState<"papers" | "blog">("blog");
 
   const filteredPosts = blogs.filter((blog) =>
     activeTab === "papers" ? !blog.isBlog : blog.isBlog

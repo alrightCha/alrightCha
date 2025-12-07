@@ -1,8 +1,8 @@
 "use client";
 
 interface ToggleButtonProps {
-  activeTab: "papers" | "blogs";
-  onToggle: (tab: "papers" | "blogs") => void;
+  activeTab: "papers" | "blog";
+  onToggle: (tab: "papers" | "blog") => void;
 }
 
 const ToggleButton = ({ activeTab, onToggle }: ToggleButtonProps) => {
@@ -23,11 +23,11 @@ const ToggleButton = ({ activeTab, onToggle }: ToggleButtonProps) => {
           Papers
         </button>
         <button
-          onClick={() => onToggle("blogs")}
+          onClick={() => onToggle("blog")}
           className={`
             px-6 py-2 font-mono uppercase text-sm font-bold transition-all duration-300
             ${
-              activeTab === "blogs"
+              activeTab === "blog"
                 ? "bg-black dark:bg-white text-white dark:text-black"
                 : "text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white"
             }
