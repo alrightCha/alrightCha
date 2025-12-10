@@ -28,7 +28,7 @@ export const blogs: BlogPost[] = [
     description:
       "Decentralizing money with bitcoin was only the first milestone. Decentralizing information is next. The final step being agriculture.",
     createdAt: "7 December 2025",
-    topic: 0,
+    topic: 2,
     content: "decentralizing-information",
     isBlog: true,
   },
