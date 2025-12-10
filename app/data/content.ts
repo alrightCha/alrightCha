@@ -32,6 +32,15 @@ export const blogs: BlogPost[] = [
     content: "decentralizing-information",
     isBlog: true,
   },
+  {
+    title: "Proof of influence",
+    description:
+      "Moving towards AI and the bot era, all of our social construct in the digital era falls to ashes. A new internet needs to be placed if we wish to keep our online society.",
+    createdAt: "10 December 2025",
+    topic: 0,
+    content: "proof-of-influence",
+    isBlog: true,
+  },
 ];
 
 export const websites: Website[] = [
