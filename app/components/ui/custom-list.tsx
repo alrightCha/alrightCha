@@ -17,7 +17,7 @@ export const List = ({
   return (
     <div className="flex flex-col items-start justify-start gap-2 text-start">
       <TextScramble
-        className="font-mono uppercase text-base sm:text-lg font-bold text-center border-dashed border-black/[.08] dark:border-white/[.145] border-b-4 p-1 m-4"
+        className="uppercase text-base border-dashed border-black/[.08] dark:border-white/[.145] border-b-2 p-1 m-4"
         as="span"
         speed={0.05}
       >
