@@ -41,6 +41,15 @@ export const blogs: BlogPost[] = [
     content: "proof-of-influence",
     isBlog: true,
   },
+  {
+    title: "The irony of Bitcoin",
+    description:
+      "Bitcoin will go to millions and to zero. The game theory behind why its design guarantees both outcomes.",
+    createdAt: "11 September 2026",
+    topic: 0,
+    content: "the-irony-of-bitcoin",
+    isBlog: true,
+  },
 ];
 
 export const websites: Website[] = [
