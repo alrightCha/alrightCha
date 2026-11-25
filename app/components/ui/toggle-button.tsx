@@ -7,42 +7,22 @@ interface ToggleButtonProps {
 
 const ToggleButton = ({ activeTab, onToggle }: ToggleButtonProps) => {
   return (
-    <div className="relative inline-flex m-4 items-center p-1 bg-black/[.03] dark:bg-white/[.03] border-black/[.06] dark:border-white/[.08]">
-      <div className="relative flex">
-        {/* Sliding background indicator */}
-        <div
-          className={`absolute inset-y-0 w-1/2 transition-transform duration-300 ease-out ${
-            activeTab === "blog" ? "translate-x-full" : "translate-x-0"
-          }`}
-        />
-
+    <div className="flex items-center gap-6">
+      {(["blog", "papers"] as const).map((tab) => (
         <button
-          onClick={() => onToggle("papers")}
+          key={tab}
+          onClick={() => onToggle(tab)}
           className={`
-            relative z-10 px-5 py-1.5 font-mono uppercase text-xs font-semibold transition-colors duration-300
-            ${
-              activeTab === "papers"
-                ? "text-white border-b-2 border-dashed"
-                : "text-black/50 dark:text-white/50 hover:text-black/70 dark:hover:text-white/70"
+            pb-2 font-mono text-xs uppercase tracking-widest transition-colors duration-200
+            ${activeTab === tab
+              ? "border-b border-black dark:border-white text-black dark:text-white"
+              : "text-black/30 dark:text-white/30 hover:text-black/60 dark:hover:text-white/60"
             }
           `}
         >
-          Papers
+          {tab === "blog" ? "Articles" : "Papers"}
         </button>
-        <button
-          onClick={() => onToggle("blog")}
-          className={`
-            relative z-10 px-5 py-1.5 font-mono uppercase text-xs font-semibold transition-colors duration-300
-            ${
-              activeTab === "blog"
-                ? "text-white border-b-2 border-dashed"
-                : "text-black/50 dark:text-white/50 hover:text-black/70 dark:hover:text-white/70"
-            }
-          `}
-        >
-          Blogs
-        </button>
-      </div>
+      ))}
     </div>
   );
 };

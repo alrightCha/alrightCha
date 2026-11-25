@@ -15,40 +15,40 @@ export const neoseiki: UserProfile = {
 
 export const blogs: BlogPost[] = [
   {
-    title: "A practical Discv5 exploration",
+    title: "The irony of Bitcoin",
     description:
-      "A deep coverage of how discv5 operates & its implementation within a purely peer-to-peer network",
-    createdAt: "October 2024",
+      "Bitcoin will go to millions and to zero. The game theory behind why its design guarantees both outcomes.",
+    createdAt: "11 Sep 2026",
     topic: 0,
-    content: "/thesis.pdf",
-    isBlog: false,
-  },
-  {
-    title: "Decentralizing information",
-    description:
-      "Decentralizing money with bitcoin was only the first milestone. Decentralizing information is next. The final step being agriculture.",
-    createdAt: "7 December 2025",
-    topic: 2,
-    content: "decentralizing-information",
+    content: "the-irony-of-bitcoin",
     isBlog: true,
   },
   {
     title: "Proof of influence",
     description:
       "Moving towards AI and the bot era, all of our social construct in the digital era falls to ashes. A new internet needs to be placed if we wish to keep our online society.",
-    createdAt: "10 December 2025",
+    createdAt: "10 Dec 2025",
     topic: 0,
     content: "proof-of-influence",
     isBlog: true,
   },
   {
-    title: "The irony of Bitcoin",
+    title: "Decentralizing information",
     description:
-      "Bitcoin will go to millions and to zero. The game theory behind why its design guarantees both outcomes.",
-    createdAt: "11 September 2026",
-    topic: 0,
-    content: "the-irony-of-bitcoin",
+      "Decentralizing money with bitcoin was only the first milestone. Decentralizing information is next. The final step being agriculture.",
+    createdAt: "7 Dec 2025",
+    topic: 2,
+    content: "decentralizing-information",
     isBlog: true,
+  },
+  {
+    title: "A practical Discv5 exploration",
+    description:
+      "A deep coverage of how discv5 operates & its implementation within a purely peer-to-peer network",
+    createdAt: "Oct 2024",
+    topic: 0,
+    content: "/thesis.pdf",
+    isBlog: false,
   },
 ];
 
